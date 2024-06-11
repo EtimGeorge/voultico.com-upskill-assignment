@@ -1,0 +1,176 @@
+/* Media Query for Tablet View */
+
+@media (max-width: 992px) {
+
+  /* =============> ADJUST NAVIGATION <============== */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-bar button{
+    display: none ;
+  }
+
+  .menu-option ul {
+    
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  /* Media Query for Tablet View */
+/* @media (max-width: 1024px) { */
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-option {
+    display: none;
+  }
+
+
+  /* =============> ADJUST HERRO SECTION <============== */
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .p1 {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Adjust Banner Section */
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust Trusted By Section */
+  .trusted-by {
+    padding: 50px;
+  }
+
+  .heading-subtext {
+    width: 100%;
+  }
+
+  .heading-subtext h2 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .heading-subtext p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust Why Valutico Section */
+  .why-valutico-frame {
+    height: 120vh;
+    padding: 50px;
+  }
+
+  .why-valutico {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .heading-and-sub-heading h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .heading-and-sub-heading p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 50px;
+    padding-top: 40px;
+    
+  }
+
+  
+
+  .secure,
+  .reliable,
+  .dedicated {
+    width: 100%;
+    box-shadow: 0 0 8px ;
+    padding: 10px;
+    border-radius: 15px;
+
+  }
+
+  /* Adjust Last Section */
+  .last {
+    padding: 50px;
+  }
+
+  .heading-and-sub-heading1 {
+    width: 100%;
+  }
+
+  .heading-and-sub-heading1 h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .heading-and-sub-heading1 p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .last-column {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .last-card {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .foto {
+    width: 100%;
+    height: 110vh;
+  }
+}

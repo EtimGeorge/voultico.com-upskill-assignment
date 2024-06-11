@@ -1,0 +1,210 @@
+@media (max-width: 768px) and (min-width: 400px) {
+  /* Navigation */
+  .navigation {
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .nav-bar button{
+    display: none ;
+  }
+
+  .menu-option {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    margin-right: 20px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    transition: right 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .show-mobile-menu {
+    right: 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+  }
+
+  .p1 {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Banner Section */
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Trusted By Section */
+  .trusted-by {
+    padding: 30px;
+  }
+
+  .heading-subtext h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .heading-subtext p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why Valutico Section */
+  .why-valutico-frame {
+    padding: 30px;
+    /* height: 20vh; */
+  }
+
+  .heading-and-sub-heading h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .heading-and-sub-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+  }
+
+  /* Last Section */
+  .last {
+    padding: 30px;
+  }
+
+  .heading-and-sub-heading1 h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .heading-and-sub-heading1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .last-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .last-card {
+    width: 100%;
+    box-shadow: none;
+   margin-top: ;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    margin-top: 20px;
+    /* padding : 5px, 0, 10px, 15px ; */
+    background-color: rgb(230, 231, 230);
+    box-shadow: 0 0 10px rgba(;
+    
+    
+  }
+
+  .foto {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+/* 
+  .hamburger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    z-index: 1000;
+    margin-right: 20px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    transition: right 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .show-mobile-menu {
+    right: 0;
+  }
+
+  .menu-option {
+    display: none;
+  } */
+}
+
+

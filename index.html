@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ==============STYLESHEETS============== -->
   <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="/mediaqquery.css">
+  <link rel="stylesheet" href="/mobilequery.css">
+
+  <link rel="stylesheet" href="/tabletquery.css">
 
   <!-- =============ICON LINK ================ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,15 +75,34 @@
       </nav>
   
 
-      <button><a class="demo1" href="#">Request a Demo <span class="material-symbols-outlined">
+      <button><a class=" mobile-demo" href="#">Request a Demo <span class="material-symbols-outlined">
         select_check_box
         </span class="check-box" ></a></button>
 
-      <!-- <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div> -->
+<!-- ================ HAMBUGER MENU ================== -->
+
+        <div class="hamburger-container">
+          <div class="hamburger-menu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </div>
+          
+          <div class="mobile-menu">
+            <nav class="mobile-nav">
+              <!-- Mobile Menu Content -->
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Your Work</a></li>
+                <li><a href="#">Company</a></li>
+                <li><button><a class="demo1" href="#">Request a Demo <span class="material-symbols-outlined">
+                  select_check_box
+                  </span class="check-box" ></a></button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
       
     </header>
@@ -120,7 +141,7 @@
     </div>
 
     <div class="gallery">
-      <!-- <img src="/assets/company list.png" alt=""> -->
+      
       <img src="/assets/images/allinial.png" alt="allinial">
       <img src="/assets/images/oaklins.png" alt="oaklins">
       <img src="/assets/images/russel.png" alt="russel">

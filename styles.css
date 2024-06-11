@@ -125,9 +125,6 @@ a {
 
 
 button {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 width: 210px;
 height: 50px;
 border: none;
@@ -157,6 +154,78 @@ button:hover {
   color:#6FC247;
   border: 1px solid #6FC247 ;
 }
+
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background-color: #7cb723;
+  z-index: 999;
+  transition: right 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20;
+}
+
+.mobile-nav li {
+  margin-bottom: 20px;
+}
+
+.mobile-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-demo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Show/Hide Mobile Menu */
+.show-mobile-menu {
+  right: 0;
+}
+
+.hamburger-line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+/* ================> HERO SECTION STYLING ===================> */
 
 .hero{
   padding-top: 100px;
@@ -494,6 +563,25 @@ line-height: 27.32px;
 .demo3:hover{
   background: #ffffff;
   color: #6FC247;
+}
+
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display:none ;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+  background: none;
+  border: none;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 
