@@ -1,4 +1,4 @@
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 768px) and (min-width: 320px) {
   /* Navigation */
   .navigation {
     height: auto;
@@ -8,7 +8,7 @@
   .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:start;
     align-items: flex-end;
     padding: 10px;
     height: 30px;
@@ -90,8 +90,6 @@
 
   .buttons {
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* width: 370px; */
     justify-content: center;
     
    
@@ -155,22 +153,20 @@
 
   .why-valutico-frame {
     width: 100%;
-    /* padding: 30px; */
-    height: 100vh;
+    height: 90vh;
   }
 
   .why-valutico{
     display: grid;
-    /* grid-template-columns: repeat(1, 1fr); */
     flex-wrap: wrap;
     padding: 10px;
-  /* margin: 0 auto; */
   color: #FFFFFF;
   align-items: center;
   }
 
   .heading-and-sub-heading {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .heading-and-sub-heading h3 {
@@ -209,66 +205,16 @@
     padding: 10px;
   }
 
-  /* .last {
-    width: 300px;
-   
-  }
-
-  .heading-and-sub-heading1{
-    width: 250px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-   
-  }
-  .heading-and-sub-heading1 h3 {
-    width: 100% !important;
-    font-size: 24px;
-    line-height: 32px;
-    text-wrap: wrap !important;
-  }
-
-  .heading-and-sub-heading1 p {
-    width: 100% !important;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .last-column {
-    display: grid;
-    grid-template-row: 1fr;
-    gap: 0;
-    width: 100%;
-  }
-
-  .last-card {
-    width: 100%;
-    box-shadow: none;
-   margin-top: ;
-  }
-
-  .card1,
-  .card2,
-  .card3 {
-    width: 100%;
-    margin-top: 20px;
-    
-    
-    box-shadow: 0 0 10px rgba();
-    
-    
-  } */
-
 
   .last{
-    display: grid;
+    display: grid ;
     grid-template-columns: 1fr;
     padding: 50px 5px;
     width: 100%;
     height: 100vh;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    gap: 5;
     }
     
     
@@ -278,9 +224,8 @@
       width:100%;
     height:100%;
     justify-content: center;
-      /* align-items: center; */
     text-align: center;
-    /* padding-bottom: 30px; */
+    padding-bottom: 0px;
       
     }
     
@@ -291,32 +236,34 @@
     font-weight: 800;
     line-height: 54.64px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     color: #373737;
+    padding-top: 5px;
     
     }
     
     .heading-and-sub-heading1 p{
       display: flex;
+      justify-content: center;
       width: 100%;
-    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    text-align: center;
+    flex-wrap: wrap;
     color: #373737;
-    
+    height: 100%;
     }
     
     .last-column{
       display: flex;
-      flex-direction: column;
-      /* padding-top: 50px;
-      margin-top: 50px;
-      gap: 30px; */
-      box-shadow: 0px 4px 4px 0px #0000000D;
+      flex-direction: column-reverse;
+      box-shadow: none !important;
       margin-top: 0;
-      padding-top: 20px;
+      padding-top: 0px;
+      flex-wrap: wrap;
+      row-gap: 0;
     }
     
     .last-card{
@@ -325,14 +272,15 @@
       width:100%;
       gap: 10px;
       height: 550px;
-      /* margin-bottom: 20px; */
+
+      box-shadow: none;
       
     }
     
     .card1, .card2, .card3{
       width: 100%;
-      /* height: 100%; */
-      padding:30px ;
+      height: 50;
+      padding:10px ;
       gap: 20px;
       box-shadow: 0px 4px 4px 0px #0000000D;
     }
@@ -344,6 +292,13 @@
   .foto {
     width: 100%;
     height: auto;
+    margin-top: 0px;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  .last{
+    margin-bottom: 30px;
   }
 }
 

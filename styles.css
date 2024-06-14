@@ -227,6 +227,26 @@ text-align: center;
   transition: transform 0.3s ease;
 }
 
+/* ============SHOW & HIDE TABLET/MOBILE MENU STYLES============= */
+
+.show-mobile-menu {
+  right: 0;
+}
+
+.hamburger-line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
 /* ============TABLET & MOBILE MENU STYLES=========== */
 
 .mobile-menu {
@@ -301,24 +321,6 @@ text-align: center;
   color: #065666;
 }
 
-
-/* ============SHOW & HIDE TABLET/MOBILE MENU STYLES============= */
-
-.show-mobile-menu {
-  right: 0;
-}
-
-.hamburger-line.open:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger-line.open:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-line.open:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 
 
 
@@ -426,7 +428,7 @@ text-align: center;
 
 .why-valutico-frame{
 background: #111111;
-height: 100vh;
+/* height: 100vh; */
 padding-top: 30px;
 
 }
@@ -443,6 +445,7 @@ padding-top: 30px;
 .heading-and-sub-heading{
   width:893px;
   height:131px; 
+  margin-bottom: 20px;
   
 }
 
@@ -495,7 +498,13 @@ padding-top: 30px;
 
 .last{
   margin-bottom: 30px;
+  gap: 0;
  
+}
+
+.last-button{
+padding-bottom: 40px;
+
 }
 
 
