@@ -1,6 +1,6 @@
 /* Media Query for Tablet View */
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 768px) {
 
   /* =============> ADJUST NAVIGATION <============== */
   .nav-bar {
@@ -15,21 +15,15 @@
     display: none ;
   }
 
-  .menu-option ul {
-    
-    font-size: 16px;
-    gap: 20px;
+  .menu-option {
+    display: none;
   }
 
-  /* Media Query for Tablet View */
-/* @media (max-width: 1024px) { */
   .hamburger-menu {
     display: block;
   }
 
-  .menu-option {
-    display: none;
-  }
+ 
 
 
   /* =============> ADJUST HERRO SECTION <============== */
@@ -41,26 +35,28 @@
     font-size: 48px;
     line-height: 60px;
     width: 100%;
+    margin-bottom:2px !important;
   }
 
   .p1 {
     font-size: 20px;
     line-height: 30px;
     width: 100%;
+    padding: 0 10px;
+   
   }
 
   .buttons {
-    flex-direction: column;
-    gap: 20px;
+    padding-top:10px ;
   }
 
-  /* Adjust Banner Section */
+  /*============ADJUST BANNER IMAGE============= */
   .banner img {
     width: 100%;
     height: auto;
   }
 
-  /* Adjust Trusted By Section */
+  /* ================ADJUST MAIN / TRUSTED BY SECTION============ */
   .trusted-by {
     padding: 50px;
   }
@@ -73,11 +69,13 @@
     width: 100%;
     font-size: 24px;
     line-height: 36px;
+    padding-bottom: 10px;
   }
 
   .heading-subtext p {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 10px;
   }
 
   .gallery {
@@ -89,15 +87,22 @@
     height: auto;
   }
 
-  /* Adjust Why Valutico Section */
+  /* ===============ADJUST ASIDE/WHY VALUTICO SECTION=============== */
+
   .why-valutico-frame {
-    height: 120vh;
+    height: 80vh;
     padding: 50px;
   }
 
   .why-valutico {
+    display: grid;
     width: 100%;
-    height: 70vh;
+    height: 100;
+  }
+
+  .heading-and-sub-heading{
+    height:15px;
+    padding-bottom: 30px;
   }
 
   .heading-and-sub-heading h3 {
@@ -114,9 +119,32 @@
   .list {
     grid-template-columns: 1fr;
     width: 100%;
-    gap: 50px;
-    padding-top: 40px;
+    gap: 10px;
+    padding-top: 100px;
     
+  }
+
+  .heading-and-sub-heading1 {
+    height:10px;
+    padding-bottom: 20px;
+      
+    }
+
+  .card1, .card2, .card3 {
+    width: 100%;
+    padding:  10px 20px;
+   
+  }
+
+  .last-card h4{
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .last-card{
+    width: 100%;
+    box-shadow: none;
+    margin-top: 5px;
   }
 
   
@@ -131,9 +159,10 @@
 
   }
 
-  /* Adjust Last Section */
+  /* ============FOOTER/LAST SECTION============= */
+
   .last {
-    padding: 50px;
+    /* padding: 50px ; */
   }
 
   .heading-and-sub-heading1 {
@@ -143,6 +172,8 @@
   .heading-and-sub-heading1 h3 {
     font-size: 24px;
     line-height: 36px;
+    padding-bottom:10px ;
+    padding-top: 100px;
   }
 
   .heading-and-sub-heading1 p {
@@ -154,6 +185,7 @@
   .last-column {
     flex-direction: row;
     gap: 10px;
+    padding-top: 10px;
   }
 
   .last-card {
@@ -166,11 +198,12 @@
   .card3 {
     width: 100%;
     padding-left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .foto {
     width: 100%;
-    height: 110vh;
+    height: 90%;
+    
   }
 }

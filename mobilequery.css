@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 767px) and (min-width: 320px) {
   /* Navigation */
   .navigation {
     height: auto;
@@ -8,9 +8,10 @@
   .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content:;
+    justify-content:center;
     align-items: flex-end;
     padding: 10px;
+    height: 30px;
   }
 
   .nav-bar button{
@@ -21,128 +22,224 @@
     display: none;
   }
 
-  .hamburger-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-  }
+  /* ========= HAMBURGER MENU FOR MOBILE ============ */
 
   .hamburger-menu {
-    margin-top: 20px;
     display: block;
-    position: relative;
-    z-index: 1000;
-    margin-right: 20px;
   }
 
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 999;
-    transition: right 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+  .menu-option {
+    display: none;
   }
+
 
   .show-mobile-menu {
     right: 0;
   }
 
-  /* Hero Section */
+  .mobile-menu {
+    position: fixed;
+    top: 70px;
+    width: 80%;
+  }
+
+  .sub-menu-1{
+    max-height: 200px;
+    overflow-Y: auto;
+  }
+
+  .sub-menu-1 ul li a{
+   font-size: 16px;
+  }
+
+  .sub-menu-1 ul li{
+    padding: 5px;
+    margin: 5PX;
+  }
+  /* ========= HAMBURGER MENU FOR MOBILE ============ */
+
+  .hamburger-menu{
+    top: 16px;
+  }
+
+
+
+  /* =========HERO SECTION =========== */
   .hero {
     padding-top: 50px;
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 48px;
     width: 100%;
+    height:fit-content;
+    padding-bottom: 15px;
+    
+    
   }
 
   .p1 {
     font-size: 18px;
     line-height: 24px;
     width: 100%;
+    padding: 20px;
+    margin-bottom:30px;
+    
   }
 
   .buttons {
     flex-direction: column;
-    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* width: 370px; */
+    justify-content: center;
+    
+   
+    
+   
   }
 
-  /* Banner Section */
+  .request-a-demo, .login{
+    width: 170px;
+    padding: 5px;
+    gap: 15px;
+    
+  }
+
+  .buttons a {
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* =========BANNER SECTION =========== */
   .banner img {
     width: 100%;
     height: auto;
+    padding-top: 30px;
   }
 
-  /* Trusted By Section */
+  /* =========== STRUSTED BY SECTION ============= */
   .trusted-by {
     padding: 30px;
+    width: 100%;
   }
 
+  .heading-subtext{
+    display: grid;
+    width: 100% !important;
+    height: 120px;
+    }
+
   .heading-subtext h2 {
+   width: 100%;
     font-size: 24px;
     line-height: 32px;
+    text-wrap: wrap;
   }
 
   .heading-subtext p {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 30px;
   }
 
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
   }
 
-  /* Why Valutico Section */
+  /* ========== WHY VALUTICO SECTION =============*/
+
   .why-valutico-frame {
-    padding: 30px;
-    /* height: 20vh; */
+    width: 100%;
+    /* padding: 30px; */
+    height: 100vh;
+  }
+
+  .why-valutico{
+    display: grid;
+    /* grid-template-columns: repeat(1, 1fr); */
+    flex-wrap: wrap;
+    padding: 10px;
+  /* margin: 0 auto; */
+  color: #FFFFFF;
+  align-items: center;
+  }
+
+  .heading-and-sub-heading {
+    width: 100%;
   }
 
   .heading-and-sub-heading h3 {
     font-size: 24px;
     line-height: 32px;
+    width: 100%;
+
   }
 
   .heading-and-sub-heading p {
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
+    padding: 10px;
+    /* text-wrap: wrap; */
   }
 
   .list {
     grid-template-columns: 1fr;
     width: 100%;
+    gap: 30px;
+    padding: 10px;
+    margin-top: 70px;
+    
+    
+    
+  }
+
+  .secure, .reliable, .dedicated{
+    box-shadow: 0px 4px 4px 3px #ffffffc7;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+  }
+
+  /* .last {
+    width: 300px;
+   
+  }
+
+  .heading-and-sub-heading1{
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0;
+    padding: 10px;
+   
   }
-
-  /* Last Section */
-  .last {
-    padding: 30px;
-  }
-
   .heading-and-sub-heading1 h3 {
+    width: 100% !important;
     font-size: 24px;
     line-height: 32px;
+    text-wrap: wrap !important;
   }
 
   .heading-and-sub-heading1 p {
+    width: 100% !important;
     font-size: 16px;
     line-height: 24px;
   }
 
   .last-column {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-row: 1fr;
     gap: 0;
+    width: 100%;
   }
 
   .last-card {
@@ -156,55 +253,105 @@
   .card3 {
     width: 100%;
     margin-top: 20px;
-    /* padding : 5px, 0, 10px, 15px ; */
-    background-color: rgb(230, 231, 230);
-    box-shadow: 0 0 10px rgba(;
     
     
-  }
+    box-shadow: 0 0 10px rgba();
+    
+    
+  } */
+
+
+  .last{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px 5px;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    }
+    
+    
+    .heading-and-sub-heading1 {
+    display: flex;
+    flex-direction: column;
+      width:100%;
+    height:100%;
+    justify-content: center;
+      /* align-items: center; */
+    text-align: center;
+    /* padding-bottom: 30px; */
+      
+    }
+    
+    .heading-and-sub-heading1 h3{
+      display: flex;
+      width: 100%;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 54.64px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #373737;
+    
+    }
+    
+    .heading-and-sub-heading1 p{
+      display: flex;
+      width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #373737;
+    
+    }
+    
+    .last-column{
+      display: flex;
+      flex-direction: column;
+      /* padding-top: 50px;
+      margin-top: 50px;
+      gap: 30px; */
+      box-shadow: 0px 4px 4px 0px #0000000D;
+      margin-top: 0;
+      padding-top: 20px;
+    }
+    
+    .last-card{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      gap: 10px;
+      height: 550px;
+      /* margin-bottom: 20px; */
+      
+    }
+    
+    .card1, .card2, .card3{
+      width: 100%;
+      /* height: 100%; */
+      padding:30px ;
+      gap: 20px;
+      box-shadow: 0px 4px 4px 0px #0000000D;
+    }
+
+    .card3{
+      margin-bottom: 0;
+    }
 
   .foto {
     width: 100%;
     height: auto;
   }
-
-
-
-/* 
-  .hamburger-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-  }
-
-  .hamburger-menu {
-    display: block;
-    position: relative;
-    z-index: 1000;
-    margin-right: 20px;
-  }
-
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 999;
-    transition: right 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-  }
-
-  .show-mobile-menu {
-    right: 0;
-  }
-
-  .menu-option {
-    display: none;
-  } */
 }
+
+
+
+
+
+
+
 
 
