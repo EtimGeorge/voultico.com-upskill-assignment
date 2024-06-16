@@ -1,5 +1,10 @@
-@media (max-width: 768px) and (min-width: 320px) {
-  /* Navigation */
+@media (max-width: 767px)  {
+  /* ===========NAVIGATION===========*/
+
+  header{
+    margin-top: 0;
+  }
+
   .navigation {
     height: auto;
     padding: 20px;
@@ -11,7 +16,8 @@
     justify-content:start;
     align-items: flex-end;
     padding: 10px;
-    height: 30px;
+    height: 40px;
+    margin-top: 0;
   }
 
   .nav-bar button{
@@ -28,6 +34,12 @@
     display: block;
   }
 
+   .hamburger-menu{
+    top: 30px;
+  }
+
+  /* =======MOBILE MENU=========== */
+
   .menu-option {
     display: none;
   }
@@ -39,30 +51,34 @@
 
   .mobile-menu {
     position: fixed;
-    top: 70px;
-    width: 80%;
+    top: 80px;
+    width: 70%;
   }
 
+  .mobile-nav ul {
+    list-style: none;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-left: 0;
+  }
+  /* =========MOBILE SUB MENU OPTIONS=========== */
+
   .sub-menu-1{
-    max-height: 200px;
-    overflow-Y: auto;
+    max-height: 300px;
+    
+    
+   
   }
 
   .sub-menu-1 ul li a{
-   font-size: 16px;
+   font-size: 12px;
   }
 
   .sub-menu-1 ul li{
     padding: 5px;
-    margin: 5PX;
+    margin: 5px;
   }
-  /* ========= HAMBURGER MENU FOR MOBILE ============ */
-
-  .hamburger-menu{
-    top: 16px;
-  }
-
-
+ 
 
   /* =========HERO SECTION =========== */
   .hero {
@@ -91,9 +107,6 @@
   .buttons {
     flex-direction: column;
     justify-content: center;
-    
-   
-    
    
   }
 
@@ -153,7 +166,7 @@
 
   .why-valutico-frame {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
   }
 
   .why-valutico{
@@ -181,8 +194,9 @@
     line-height: 24px;
     width: 100%;
     padding: 10px;
-    /* text-wrap: wrap; */
   }
+
+  /* ==========FOOTER SECTION=========== */
 
   .list {
     grid-template-columns: 1fr;
@@ -190,9 +204,6 @@
     gap: 30px;
     padding: 10px;
     margin-top: 70px;
-    
-    
-    
   }
 
   .secure, .reliable, .dedicated{
@@ -201,7 +212,6 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    /* align-items: center; */
     padding: 10px;
   }
 
@@ -272,9 +282,7 @@
       width:100%;
       gap: 10px;
       height: 550px;
-
       box-shadow: none;
-      
     }
     
     .card1, .card2, .card3{

@@ -19,7 +19,6 @@ body{
 
 .navigation {
   display: flex;
-  height: 135px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px 0px #0000000D;
   position: sticky;
@@ -34,7 +33,7 @@ body{
   flex-direction: row;
   align-items: center;
   gap: 50px;
-  padding: 70px;
+  padding: 30px;
 }
 
 a {
@@ -98,10 +97,8 @@ a.home {
 .menu-option ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
-  background-color: #065666;
+  background-color: #d0d3d3;
   margin-left: 15px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 10px rgba(249, 249, 249, 0.872);
 }
 
 .menu-option ul li:hover .sub-menu-1 ul {
@@ -115,7 +112,7 @@ a.home {
   padding: 16px;
   border-bottom: 1px dotted #fff;
   background: transparent;
-  border-radius: 0;
+  /* border-radius: 0; */
   text-align: left;
 }
 
@@ -251,49 +248,48 @@ text-align: center;
 
 .mobile-menu {
   position: fixed;
-  top: 138px;
+  /* top: 138px; */
   right: -100%;
-  width: 300px;
+  width: 100%;
   height: 100vh;
-  background-color: #065666;
+  background-color: #e4e9ea;
   z-index: 999;
   transition: right 0.7s ease;
-  box-shadow:inset 0 0 20px rgba(255, 255, 255, 0.884);
   padding: 20px;
-  border-radius: 15px;
 }
 
 .mobile-nav ul {
   list-style: none;
-  padding: 0;
-  margin-top: 20;
-  text-align: center;
-  padding-top: 20px;
+  margin-left: 70px;
+  padding-top: 10px;
 }
 
 .mobile-nav li {
   margin-bottom: 20px;
+  padding-bottom: 30px;
 
 }
 
 .mobile-nav a {
-  color: #ffff;
+  color: #033f4b;
   text-decoration: none;
   font-size: 18px;
   line-height: 50px;
+  font-weight: 700;
+ 
 }
 
 
 /* =============MOBILE NAV SUB MENU STYLES=============== */
 
 .mobile-nav ul li:hover .sub-menu-1 {
-  display: block;
+  display: inline-block;
   position: absolute;
   background-color: #fefffe;
   margin-top: 2px;
   margin-left: 15px;
-  border-radius: 8px;
-  box-shadow: inset 1 20 10px rgba(51, 54, 54, 0.872);
+  /* border-radius: 8px; */
+  /* box-shadow: inset 1 20 10px rgba(51, 54, 54, 0.872); */
 }
 
 .mobile-nav ul li:hover .sub-menu-1 ul {
@@ -428,23 +424,22 @@ text-align: center;
 
 .why-valutico-frame{
 background: #111111;
-/* height: 100vh; */
+/* height: 90vh; */
 padding-top: 30px;
-
 }
 
 .why-valutico{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0 auto;
   color: #FFFFFF;
   align-items: center;
 }
 
 .heading-and-sub-heading{
-  width:893px;
-  height:131px; 
+  /* width:893px; */
+  /* height:131px;  */
   margin-bottom: 20px;
   
 }
@@ -459,22 +454,23 @@ padding-top: 30px;
 }
 
 .heading-and-sub-heading p{
+  display: flex;
+  justify-content: center;
   width: 893px;
   height: 60px;
-  font-family: Manrope;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
   color: #D7D7D7;
-
+  padding: 0 30px;
 }
 
 .list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  width: 1060px;
+  /* width: 1060px; */
   height:117px;
   margin-top: 35px;
   padding: 15px;
@@ -486,7 +482,7 @@ padding-top: 30px;
 }
 
 .reliable{
-  width:400px;
+  width:300px;
   height:117px;
 }
 
@@ -498,7 +494,7 @@ padding-top: 30px;
 
 .last{
   margin-bottom: 30px;
-  gap: 0;
+  padding-top: 30px;
  
 }
 
@@ -511,7 +507,7 @@ padding-bottom: 40px;
 .heading-and-sub-heading1 {
   display: flex;
   flex-direction: column;
-  width:1062px;
+  /* width:1062px; */
   height:100px;
   justify-content: center;
   align-items: center;
@@ -534,13 +530,11 @@ padding-bottom: 40px;
 }
 
 .heading-and-sub-heading1 p{
-  width: 893px;
-  height: 60px;
-  font-family: Manrope;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
+  padding: 0 50px;
   color: #373737;
 
 }
@@ -548,18 +542,18 @@ padding-bottom: 40px;
 .last-column{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-top: 50px;
   margin-top: 50px;
-  gap: 30px;
+  /* gap: 30px; */
   box-shadow: 0px 4px 4px 0px #0000000D;
 }
 
 .last-card{
   display: flex;
   flex-direction: column;
-  width:477px;
-  height:693px;
-  padding: 20px;
+
+  padding: 0 40px;
   box-shadow: 0px 4px 4px 0px #0000000D;
 }
 
@@ -570,8 +564,12 @@ padding-bottom: 40px;
 }
 
 .foto{
-  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  /* overflow: hidden; */
+  padding: 0 30px;
   border-radius: 20px;
+  object-fit: fill;
   
 }
 
