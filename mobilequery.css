@@ -104,11 +104,86 @@
     
   }
 
-  .buttons {
-    flex-direction: column;
-    justify-content: center;
-   
+
+  /* =========REDUCED BUTTON SIZE========= */
+
+  button {
+    width: 150px; /* Reduced width */
+    height: 40px; /* Reduced height */
+    border: none;
+    border-radius: 16px;
+    background-color: #6FC247;
+    color: #FFFFFF;
+    font-size: 16px; /* Reduced font size */
+    font-weight: 700;
+    line-height: 22px; /* Adjusted line height */
+    padding: 8px; /* Reduced padding */
+    cursor: pointer;
   }
+  
+  button a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: 16px; /* Reduced font size */
+    text-wrap: nowrap;
+  }
+  
+  button a .material-symbols-outlined {
+    margin-left: 8px;
+  }
+  
+  button:hover {
+    background-color: #FFFFFF;
+    color: #6FC247;
+    border: 1px solid #6FC247;
+  }
+  
+  .login {
+    width: 150px; /* Reduced width */
+    height: 40px; /* Reduced height */
+    border: 1px solid #6FC247;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #ffffff;
+    font-size: 16px; /* Reduced font size */
+    font-weight: 700;
+    line-height: 22px; /* Adjusted line height */
+    margin-left: 20px;
+  }
+  
+  .login:hover {
+    background: #6FC247;
+    color: #FFFFFF;
+    border: 1px solid #6FC247;
+  }
+  
+  .demo1 {
+    color: #FFFFFF;
+  }
+  
+  .demo1:hover {
+    color: #6FC247;
+  }
+  
+  .demo2 {
+    color: #6FC247;
+  }
+  
+  .demo2:hover {
+    color: #fff;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    /* gap: 10px; */
+    text-align: center;
+    padding: 60px 10px 30px 10px;
+  }
+  
 
   .request-a-demo, .login{
     width: 170px;
@@ -128,7 +203,7 @@
   .banner img {
     width: 100%;
     height: auto;
-    padding-top: 30px;
+    padding-top: 0px;
   }
 
   /* =========== STRUSTED BY SECTION ============= */
