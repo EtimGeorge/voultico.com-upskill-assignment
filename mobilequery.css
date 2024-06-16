@@ -160,6 +160,12 @@
   
   .demo1 {
     color: #FFFFFF;
+    font-size: 20px; 
+  }
+
+  .demo4{
+    width: 80%;
+    justify-content: center;
   }
   
   .demo1:hover {
